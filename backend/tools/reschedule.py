@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from backend.tools.slots import (
+from tools.slots import (
     find_doctor,
     get_day_name,
     get_working_windows,

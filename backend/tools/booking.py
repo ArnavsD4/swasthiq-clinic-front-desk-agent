@@ -1,7 +1,7 @@
 from datetime import datetime
 from threading import Lock
 
-from backend.tools.slots import(
+from tools.slots import(
     find_doctor,
     get_day_name,
     get_working_windows,
