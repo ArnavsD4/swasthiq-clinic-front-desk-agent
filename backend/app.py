@@ -15,8 +15,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-    "http://localhost:5173",
-    "https://swasthiq-clinic-front-desk-agent-55g7r6038-arnavsd4.vercel.app",
+    "*"
     ],
     allow_credentials=True,
     allow_methods=["*"],
