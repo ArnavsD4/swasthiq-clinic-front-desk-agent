@@ -1,4 +1,4 @@
-const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '')
+const API_URL = 'https://swasthiq-clinic-front-desk-agent-backend-ov095yavd-arnavsd4.vercel.app'
 
 // The assignment fixes "today"; never use the browser clock.
 export const TODAY = '2026-10-01'
