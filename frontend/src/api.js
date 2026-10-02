@@ -1,4 +1,4 @@
-const API_URL = 'https://swasthiq-clinic-front-desk-agent-backend-ov095yavd-arnavsd4.vercel.app'
+const API_URL = '/api'
 
 // The assignment fixes "today"; never use the browser clock.
 export const TODAY = '2026-10-01'

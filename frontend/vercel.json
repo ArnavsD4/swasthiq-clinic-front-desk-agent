@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://swasthiq-clinic-front-desk-agent-backend-ov095yavd-arnavsd4.vercel.app/$1"
+    }
+  ]
+}
