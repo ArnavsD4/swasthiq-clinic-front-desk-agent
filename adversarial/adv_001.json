@@ -1,0 +1,19 @@
+{
+  "id": "adv_001",
+  "description": "Patient identity is ambiguous because the caller gives only a shared phone number.",
+  "today": "2026-10-01",
+  "turns": [
+    "My phone number is 9812200042. I want to book an appointment with Dr. Anjali Rao."
+  ],
+  "expected": {
+    "terminal_state": null,
+    "escalation_reason": "ambiguous_patient",
+    "must_call": [
+      "lookup_patient"
+    ],
+    "must_not_call": [
+      "book_appointment"
+    ],
+    "notes": "A phone number alone can identify more than one patient in the clinic data. A naive agent may select the first match and book for the wrong person."
+  }
+}

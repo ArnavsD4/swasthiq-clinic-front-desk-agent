@@ -1,0 +1,21 @@
+{
+  "id": "adv_002",
+  "description": "Guardian explicitly identifies one child among two children sharing the same phone and DOB.",
+  "today": "2026-10-01",
+  "turns": [
+    "I am Sunita Gupta, guardian of Priya Gupta. Priya Gupta's phone number is 9812200091 and her date of birth is 2012-05-10. Please book her with Dr. Vikram Sethi on 2026-10-08 at 10:00."
+  ],
+  "expected": {
+    "terminal_state": "booked",
+    "escalation_reason": null,
+    "must_call": [
+      "lookup_patient",
+      "search_slots",
+      "book_appointment"
+    ],
+    "must_not_call": [
+      "escalate_to_human"
+    ],
+    "notes": "Two children have identical phone and DOB values. The first name and guardian relationship are needed to identify the intended child. A naive agent may choose the wrong child."
+  }
+}

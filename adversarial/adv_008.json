@@ -1,0 +1,21 @@
+{
+  "id": "adv_008",
+  "description": "Caller uses relative Hindi date and time language and supplies enough information to book.",
+  "today": "2026-10-01",
+  "turns": [
+    "Naam Rajesh Kumar Sharma hai, phone 9812200011 aur DOB 1979-03-14 hai. Dr. Rao ke saath parso subah 11 baje appointment book kar do."
+  ],
+  "expected": {
+    "terminal_state": "booked",
+    "escalation_reason": null,
+    "must_call": [
+      "lookup_patient",
+      "search_slots",
+      "book_appointment"
+    ],
+    "must_not_call": [
+      "escalate_to_human"
+    ],
+    "notes": "Relative dates and Hindi clock expressions must be resolved against the request's today field, not the machine clock. A naive agent may interpret the date incorrectly."
+  }
+}
