@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 CLINIC_FILE = BASE_DIR / "clinic.json"
 
 def load_clinic_data():
