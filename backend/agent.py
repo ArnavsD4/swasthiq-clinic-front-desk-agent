@@ -7,13 +7,13 @@ import uuid
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
-from backend.data_loader import load_clinic_data
-from backend.tools.patient import lookup_patient
-from backend.tools.slots import search_slots
-from backend.tools.booking import book_appointment
-from backend.tools.reschedule import reschedule_appointment
-from backend.tools.cancel import cancel_appointment
-from backend.tools.escalate import escalate_to_human
+from data_loader import load_clinic_data
+from tools.patient import lookup_patient
+from tools.slots import search_slots
+from tools.booking import book_appointment
+from tools.reschedule import reschedule_appointment
+from tools.cancel import cancel_appointment
+from tools.escalate import escalate_to_human
 
 
 # ============================================================
